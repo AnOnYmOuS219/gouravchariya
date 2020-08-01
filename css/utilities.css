@@ -1,0 +1,59 @@
+.vg-flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-bw{
+    justify-content: space-between;
+}
+.vg-btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.vg-btn-primary{
+    color: var(--secondary);
+    background: var(--primary);
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.vg-btn-primary:hover{
+    color: var(--primary);
+    background: transparent;
+    border-color: var(--primary);
+}
+.vg-btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);   
+}
+
+.vg-btn-secondary:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+.vg-flex-1{
+    flex: 1;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.vg-small-card{
+    position: relative;
+    height: 200px;
+}
+.vg-small-card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+}
