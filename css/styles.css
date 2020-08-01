@@ -7,6 +7,39 @@
     --light: #f2f2f2;
     --secondary: #070606;
 }
+#myModal video{
+    display: none;
+}
+#myModal img{
+    display: none;
+}
+.work-transition button {
+    position: absolute;
+    padding: 0.2rem;
+    cursor: pointer;
+    border-color: var(--primary);
+    outline: none;
+    top:50%;
+    right: -0.5rem;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.work-transition img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.work-transition{
+    position: relative;
+}
 .modal {
     display: none; 
     position: fixed;
@@ -118,13 +151,13 @@ footer{
     padding: 5rem 0;
     color: var(--pure);
 }
-section.work .vg-card-wrapper .vg-card:hover{
+/* section.work .vg-card-wrapper .vg-card:hover{
     overflow: hidden;
 }
 section.work .vg-card-wrapper .vg-card:hover img{
     transform: scale(1.2);
     filter: opacity(0.6);
-}
+} */
 section.work .vg-card-wrapper .vg-card:hover .vg-overlay{
     opacity: 1;
 }
