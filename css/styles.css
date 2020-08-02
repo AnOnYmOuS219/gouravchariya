@@ -43,7 +43,7 @@
       }
       .site-main-wrapper div.mobile-branding{
         display: block !important;
-        z-index: 2;
+        z-index: 12;
       }
     
     .site-main-wrapper .vg-container1{
@@ -150,6 +150,16 @@
     .site-main-wrapper section.work .vg-card-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+.site-main-wrapper div.mobile-branding{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0.2rem;
+    color: var(--pure);
+    font-size: 20px;
+    font-family: 'Rock Salt', cursive;
 }
 #showreel{
     padding-top: 5rem;
@@ -695,16 +705,7 @@ header{
     background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 82%, 0 100%);
 }
-.site-main-wrapper div.mobile-branding{
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 0.2rem;
-    color: var(--pure);
-    font-size: 20px;
-    font-family: 'Rock Salt', cursive;
-}
+
 *{
     margin: 0;
     padding: 0;
