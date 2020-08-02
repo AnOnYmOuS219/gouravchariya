@@ -94,6 +94,12 @@
        left: 5px;
        top: 0;
     }
+    .site-main-wrapper header .nav-container iframe{
+        position: absolute;
+        width: 100%;
+        left: 5px;
+        top: 100px;
+     }
     .site-main-wrapper header .nav-container {
         padding-left: 0;    
         margin-left: 0;
@@ -196,13 +202,16 @@
 }
 .site-main-wrapper .hamburger{
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 20px;
+    right: 20px;
     z-index: 1001;
     border: none;
     outline: none;
     cursor: pointer;
     display: none;
+    background: none;
+    color: var(--pure);
+    font-size: 1.5rem;
 }
 .site-main-wrapper{
     position: relative;
