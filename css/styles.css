@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import 'utilities.css';
+
 :root{
     --primary: #3DCFD3;
     --dark: #161616;
@@ -46,8 +52,8 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 87%, 0 100%);
     }
     .site-main-wrapper section.about img.about-me-img {
-        height: 350px;
-        padding-left: 1rem;
+        height: 360px;
+        padding: 1rem;
     }
     header .portfolio-content .nav-right{
         padding-top: 9rem;
@@ -79,6 +85,9 @@
     /* .nav-container #showreel video{
         padding-left: 1rem;
     } */
+    .site-main-wrapper section.about img.about-me-img {
+        height: 300px;
+    }
     .site-main-wrapper header .nav-container video{
        position: absolute;
        width: 100%;
@@ -98,13 +107,13 @@
     }
     header .portfolio-content .nav-content{
         position: absolute;
-        top: 260px;
+        top: 230px;
         padding: 1rem;
         background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
     }
     header .portfolio-content .nav-left{
        margin-top: -2rem;
-       margin-right: -10rem;
+       margin-right: -8rem;
        padding-bottom: 10rem;
     }
     .about-inner-wrap{
@@ -132,7 +141,9 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
+#showreel{
+    padding-top: 5rem;
+}
 .times{
     border: none;
     outline: none;
@@ -174,6 +185,7 @@
     -webkit-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 .open{
     transform: translateX(0);
@@ -321,6 +333,7 @@ html,body{
 }
 footer .copyright{
     color: var(--ternary);
+    font-family: 'Mukta', sans-serif;
 }
 footer .footer-socials{
     margin-bottom: 2rem;
@@ -331,6 +344,7 @@ footer .footer-socials a{
 }
 footer h1{
     margin-bottom: 2rem;
+    font-family: 'Rock Salt', cursive;
 }
 footer{
     background: var(--dark);
@@ -348,9 +362,13 @@ section.work .vg-card-wrapper .vg-card:hover img{
 section.work .vg-card-wrapper .vg-card:hover .vg-overlay{
     opacity: 1;
 }
+.vg-overlay span{
+    font-family: 'Cinzel', cursive;
+}
 section.work .vg-card-wrapper .vg-card .vg-overlay a{
     color: var(--secondary);
     text-decoration: none;
+    font-family: 'Mukta', sans-serif;
 }
 section.work .vg-card-wrapper .vg-card .vg-overlay{
     position: absolute;
@@ -431,6 +449,7 @@ section.reviews .vg-slider .vg-slide span{
 section.reviews .vg-slider .vg-slide p{
     color: var(--ternary);
     margin-bottom: 1rem;
+    font-family: 'Mukta', sans-serif;
 }
 section.reviews .vg-slider .vg-slide{
     text-align: center;
@@ -438,6 +457,9 @@ section.reviews .vg-slider .vg-slide{
     align-items: center;
     flex-direction: column;
     padding: 0 6rem;
+}
+.vg-slide span{
+    font-family: 'Satisfy', cursive;
 }
 .review-img{
     height: 100px;
@@ -456,6 +478,7 @@ section.freelancer p{
 section.freelancer h1{
     font-size: 2rem;
     margin-bottom: 2rem;
+    font-family: 'Cinzel', serif;
 }
 section.freelancer{
     text-align: center;
@@ -474,6 +497,7 @@ section.skills .vg-card-wrapper .vg-card:hover h2,section.skills .vg-card-wrappe
 section.skills .vg-card-wrapper .vg-card p{
     line-height: 1.3;
     color: var(--ternary);
+    font-family: 'Mukta', sans-serif;
 
 }
 section.skills .vg-card-wrapper .vg-card h2{
@@ -496,6 +520,9 @@ section.skills .vg-card-wrapper .vg-card .skill-icon-wrapper{
     background: var(--primary);
     width: fit-content;
 }
+.vg-card h2{
+    font-family: 'Cinzel', serif;
+}
 section.skills .vg-card-wrapper .vg-card{
     background: var(--pure);
     padding: 3rem 2rem;
@@ -507,6 +534,7 @@ section.skills .vg-card-wrapper .vg-card{
     -webkit-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+    
 }
 section.skills .vg-card-wrapper{
     display: grid;
@@ -530,6 +558,7 @@ section.skills{
     text-align: center;
     line-height: 0.5;
     margin-bottom: 1rem;
+    font-family: 'Cinzel', serif;
 }
 section.about .social a:hover{
     background: var(--primary);
@@ -565,11 +594,17 @@ section.about p{
     color:  var(--ternary);
     line-height: 1.5;
     margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-family: 'Mukta', sans-serif;
+}
+section.about h3{
+    font-family: 'Satisfy', cursive;
 }
 section.about h1{
     margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 400;
+    font-family: 'Cinzel', serif;
 }
 section.about h1 span{
     color: var(--primary);
@@ -594,10 +629,12 @@ section{
 .portfolio-content .nav-right p{
     margin-bottom: 2rem;
     line-height: 1.5;
+    font-family: 'Mukta', sans-serif;
 }
 .portfolio-content .nav-right h6{
     font-size: 1.2rem;
     color: var(--primary);
+    font-family: 'Cinzel', serif;
 }
 .portfolio-content .nav-right h1 span{
     color: var(--primary);
@@ -607,6 +644,7 @@ section{
     font-weight: 100;
     line-height: 1.2;
     margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 .portfolio-content .nav-right{
     color: var(--pure);
@@ -621,6 +659,7 @@ header .nav-container nav .nav-left .branding{
     font-size: 30px;
     color: var(--pure);
     margin-right: 3rem;
+    font-family: 'Rock Salt', cursive;
 }
 header .nav-container nav .nav-left a:hover{
     color: var(--primary);
@@ -630,6 +669,9 @@ header .nav-container nav .nav-left a{
     text-decoration: none;
     margin-right: 2rem;
     text-transform: uppercase;
+}
+.vg-nav-links{
+    font-family: 'Montserrat', sans-serif;
 }
 header .nav-container{
     max-width: 1152px;
