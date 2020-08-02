@@ -61,3 +61,13 @@
 .vg-caption{
     font-family: 'Mukta', sans-serif;
 }
+.mobile-branding{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0.2rem;
+    color: var(--pure);
+    font-size: 20px;
+    font-family: 'Rock Salt', cursive;
+}
