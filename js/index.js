@@ -14,6 +14,17 @@ $(document).ready(function () {
 
     })
 });
+
+let hamburger = document.querySelector('.hamburger')
+let times = document.querySelector('.times')
+let mobileNav = document.querySelector('.mobile-nav')
+hamburger.addEventListener('click', () => {
+    mobileNav.classList.add('open')
+})
+times.addEventListener('click', () => {
+    mobileNav.classList.remove('open')
+})
+
 let changeImageFlag = [0, 0, 0, 0]
 function changeImage(flagNo) {
     let imageClasses1 = document.getElementsByClassName("work-transition-img1")

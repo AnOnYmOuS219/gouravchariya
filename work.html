@@ -5,152 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="nav-container">
-            <nav class="vg-flex items-center justify-bw">
-                <div class="nav-left vg-flex items-center">
-                    <div class="branding">gourav4iya</div>
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#">Work</a>
-                        <a href="./index.html#about">About</a>
+    <div class="site-main-wrapper">
+        <button class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <div class="mobile-nav">
+            <button class="times">X</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="nav-container">
+                <nav class="main-nav vg-flex items-center justify-bw">
+                    <div class="nav-left vg-flex items-center">
+                        <div class="branding">gourav4iya</div>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#">Work</a>
+                            <a href="./index.html#about">About</a>
+                        </div>
                     </div>
-                </div>
-                <div class="nav-right">
-                    <button class="vg-btn vg-btn-primary">Contact</button>
-                </div>
-            </nav>
-            <div id="showreel" class="portfolio-content vg-flex items-center justify-bw">
-                <div class="nav-left vg-flex-1 vg-flex justify-center">
-                    <video controls width="500px">
-                        <source src="./vid/vid1.mp4">
-                    </video>
-                </div>
-                <div class="nav-right vg-flex-1">
-                    <h6>Glimpse To Rishikesh</h6>
-                    <p>
-                        A visit to Rishikesh turnes out to be an awesome cinematographic journey start.
-                    </p>
-                    <div>
-                        <button class="vg-btn vg-btn-secondary">View On Youtube</button>
+                    <div class="nav-right">
+                        <button class="vg-btn vg-btn-primary">Contact</button>
+                    </div>
+                </nav>
+                <div id="showreel" class="portfolio-content vg-flex items-center justify-bw">
+                    <div class="nav-left vg-flex-1 vg-flex justify-center">
+                        <video controls width="500px">
+                            <source src="./vid/vid1.mp4">
+                        </video>
+                    </div>
+                    <div class="nav-right vg-flex-1">
+                        <h6>Glimpse To Rishikesh</h6>
+                        <p>
+                            A visit to Rishikesh turnes out to be an awesome cinematographic journey start.
+                        </p>
+                        <div>
+                            <button class="vg-btn vg-btn-secondary">View On Youtube</button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </header>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <video class="modal-content" id="vid01" controls autoplay>
+            </video>
         </div>
-    </header>
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <video class="modal-content" id="vid01" controls autoplay>
-        </video>
+        <section class="work">
+            <div class="vg-container1">
+                <h1 class="section-heading"><span>My</span> Work</h1>
+                <p>Prvide high quality service</p>
+                <div class="vg-card-wrapper">
+                    <!-- <div class="vg-card vg-small-card workV">
+                        <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid1.mp4" poster=""
+                            onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workV">
+                        <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid4.mov" poster=""
+                            onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workV">
+                        <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid2.mp4" poster=""
+                            onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workV">
+                        <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid3.mkv" poster=""
+                            onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workV">
+                        <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid5.mkv" poster=""
+                            onclick="displayModal(this)">
+                    </div> -->
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi " src="./images/img2.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI work-transition">
+                        <img class="vg-small-card-img wi work-transition-img1" src="./images/img45.jpg"
+                            onclick="displayModal(this)">
+                        <img class="vg-small-card-img wi work-transition-img2" src="./images/img44.jpg"
+                            onclick="displayModal(this)">
+                        <button onclick="changeImage(0)">&#9658;</button>
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img4.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img6.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img38.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI work-transition">
+                        <img class="vg-small-card-img wi work-transition-img1" src="./images/img49.jpg"
+                            onclick="displayModal(this)">
+                        <img class="vg-small-card-img wi work-transition-img2" src="./images/img48.jpg"
+                            onclick="displayModal(this)">
+                        <button onclick="changeImage(1)">&#9658;</button>
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img34.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img23.jpg" onclick="displayModal(this)">
+                    </div>
+
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img21.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img33.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI work-transition">
+                        <img class="vg-small-card-img wi work-transition-img1" src="./images/img46.jpg"
+                            onclick="displayModal(this)">
+                        <img class="vg-small-card-img wi work-transition-img2" src="./images/img47.jpg"
+                            onclick="displayModal(this)">
+                        <button onclick="changeImage(2)">&#9658;</button>
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img20.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img22.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img7.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img19.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img5.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img9.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img10.jpg" onclick="displayModal(this)">
+                    </div>
+                    <div class="vg-card vg-small-card workI">
+                        <img class="vg-small-card-img wi" src="./images/img11.jpg" onclick="displayModal(this)">
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
     </div>
-    <section class="work">
-        <div class="vg-container1">
-            <h1 class="section-heading"><span>My</span> Work</h1>
-            <p>Prvide high quality service</p>
-            <div class="vg-card-wrapper">
-                <!-- <div class="vg-card vg-small-card workV">
-                    <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid1.mp4" poster=""
-                        onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workV">
-                    <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid4.mov" poster=""
-                        onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workV">
-                    <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid2.mp4" poster=""
-                        onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workV">
-                    <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid3.mkv" poster=""
-                        onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workV">
-                    <video autoplay loop muted class="vg-small-card-img wv" src="./vid/vid5.mkv" poster=""
-                        onclick="displayModal(this)">
-                </div> -->
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi " src="./images/img2.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI work-transition">
-                    <img class="vg-small-card-img wi work-transition-img1" src="./images/img45.jpg"
-                        onclick="displayModal(this)">
-                    <img class="vg-small-card-img wi work-transition-img2" src="./images/img44.jpg"
-                        onclick="displayModal(this)">
-                    <button onclick="changeImage(0)">&#9658;</button>
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img4.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img6.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img38.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI work-transition">
-                    <img class="vg-small-card-img wi work-transition-img1" src="./images/img49.jpg"
-                        onclick="displayModal(this)">
-                    <img class="vg-small-card-img wi work-transition-img2" src="./images/img48.jpg"
-                        onclick="displayModal(this)">
-                    <button onclick="changeImage(1)">&#9658;</button>
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img34.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img23.jpg" onclick="displayModal(this)">
-                </div>
-
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img21.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img33.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI work-transition">
-                    <img class="vg-small-card-img wi work-transition-img1" src="./images/img46.jpg"
-                        onclick="displayModal(this)">
-                    <img class="vg-small-card-img wi work-transition-img2" src="./images/img47.jpg"
-                        onclick="displayModal(this)">
-                    <button onclick="changeImage(2)">&#9658;</button>
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img20.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img22.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img7.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img19.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img5.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img9.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img10.jpg" onclick="displayModal(this)">
-                </div>
-                <div class="vg-card vg-small-card workI">
-                    <img class="vg-small-card-img wi" src="./images/img11.jpg" onclick="displayModal(this)">
-                </div>
-
-
-
-
-            </div>
-        </div>
-    </section>
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
